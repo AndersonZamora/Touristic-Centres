@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ScreenDetailTouristActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/stimulation"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="200dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/collpa" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/gradient_detail"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:text="VENTANILLAS DE ARASCORGUE"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="10dp"
+                    android:text="Bambamarca"
+                    android:textColor="#2b9e57"
+                    android:textColorHint="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/altitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:drawablePadding="10dp"
+                    android:text="2730 msm"
+                    android:textColor="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_area_chart_24" />
+
+                <TextView
+                    android:id="@+id/card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/altitude"
+                    android:layout_marginEnd="-25dp"
+                    android:layout_toStartOf="@+id/altitude"
+                    android:drawablePadding="10dp"
+                    android:text="10 min"
+                    android:textColor="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_directions_car_24" />
+
+
+                <TextView
+                    android:id="@+id/walk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/altitude"
+                    android:layout_marginStart="-25dp"
+                    android:layout_toEndOf="@+id/altitude"
+                    android:drawablePadding="10dp"
+                    android:text="10 min"
+                    android:textColor="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_directions_walk_24" />
+
+
+                <TextView
+                    android:id="@+id/passage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card"
+                    android:layout_alignEnd="@+id/card"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="10dp"
+                    android:text="S/.5.00"
+                    android:textColor="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_price_change_24" />
+
+                <TextView
+                    android:id="@+id/entrance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/walk"
+                    android:layout_alignStart="@+id/walk"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:drawablePadding="10dp"
+                    android:text="S/.2.00"
+                    android:textColor="#2b9e57"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    app:drawableStartCompat="@drawable/ic_baseline_airplane_ticket_24" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
